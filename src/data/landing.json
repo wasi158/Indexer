@@ -15,14 +15,14 @@
       { "label": "Compare", "href": "#compare" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "cta": { "label": "Go to dashboard", "href": "/dashboard" }
+    "cta": { "label": "Go to dashboard", "href": "/signin" }
   },
   "hero": {
     "badge": "INSTANT URL INDEXING",
     "title": "Stop waiting weeks for Google to index your URLs",
     "description": "Instant Indexer pings Google the moment you submit. Watch every page, backlink, and money site move from submitted → crawled → indexed in minutes — not weeks.",
     "highlights": ["submitted", "crawled", "indexed"],
-    "primaryCta": { "label": "Start indexing now", "href": "/dashboard" },
+    "primaryCta": { "label": "Start indexing now", "href": "/signin" },
     "secondaryCta": { "label": "See how it works", "href": "#how-it-works" },
     "mockup": {
       "url": "app.instantindexer.io",
@@ -269,7 +269,7 @@
   "finalCta": {
     "title": "Get indexed before your competitors finish their coffee",
     "description": "Start with 100 free trial links. Scale to VIP instant indexing the moment you need speed.",
-    "cta": { "label": "Start indexing now", "href": "/dashboard" },
+    "cta": { "label": "Start indexing now", "href": "/signin" },
     "trustBadges": [
       { "icon": "shield", "text": "Secure checkout" },
       { "icon": "bolt", "text": "Instant activation" },
