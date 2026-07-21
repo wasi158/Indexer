@@ -1,0 +1,279 @@
+{
+  "site": {
+    "name": "Instant Indexer",
+    "url": "https://app.instantindexer.io",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "href": "https://wa.me/10000000000"
+    }
+  },
+  "nav": {
+    "links": [
+      { "label": "How it works", "href": "#how-it-works" },
+      { "label": "Live demo", "href": "#live-demo" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "Compare", "href": "#compare" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "cta": { "label": "Go to dashboard", "href": "/dashboard" }
+  },
+  "hero": {
+    "badge": "INSTANT URL INDEXING",
+    "title": "Stop waiting weeks for Google to index your URLs",
+    "description": "Instant Indexer pings Google the moment you submit. Watch every page, backlink, and money site move from submitted → crawled → indexed in minutes — not weeks.",
+    "highlights": ["submitted", "crawled", "indexed"],
+    "primaryCta": { "label": "Start indexing now", "href": "/dashboard" },
+    "secondaryCta": { "label": "See how it works", "href": "#how-it-works" },
+    "mockup": {
+      "url": "app.instantindexer.io",
+      "liveLabel": "LIVE",
+      "steps": [
+        { "id": "submitted", "label": "SUBMITTED", "icon": "send" },
+        { "id": "crawled", "label": "CRAWLED", "icon": "target" },
+        { "id": "indexed", "label": "INDEXED", "icon": "database" },
+        { "id": "tracked", "label": "TRACKED", "icon": "chart" }
+      ],
+      "urls": [
+        { "path": "/blog/seo-playbook-2026", "progress": 100, "status": "Indexed" },
+        { "path": "/shop/spring-collection", "progress": 100, "status": "Indexed" },
+        { "path": "/guides/link-building", "progress": 72, "status": "Submitted" },
+        { "path": "/landing/black-friday", "progress": 45, "status": "Submitted" },
+        { "path": "/resources/case-study", "progress": 28, "status": "Submitted" }
+      ],
+      "stats": [
+        { "value": "96.4%", "label": "Success Rate" },
+        { "value": "8m 12s", "label": "Average Time" },
+        { "value": "1,204", "label": "Total Indexed" }
+      ]
+    }
+  },
+  "audiences": {
+    "label": "PUSHING LINKS FOR",
+    "items": [
+      { "label": "Ecommerce", "icon": "store" },
+      { "label": "Content sites", "icon": "pen" },
+      { "label": "Link builders", "icon": "link" },
+      { "label": "Agencies", "icon": "building" },
+      { "label": "SEO teams", "icon": "gauge" }
+    ]
+  },
+  "problem": {
+    "label": "THE PROBLEM",
+    "title": "Unindexed URLs are invisible URLs",
+    "description": "Every day Google hasn't crawled your page is a day it can't rank, can't convert, and can't earn back what you paid to make it.",
+    "cards": [
+      {
+        "icon": "clock",
+        "title": "Weeks of dead air",
+        "text": "New pages can sit unindexed for 2–8 weeks. Every day invisible is a day of lost traffic."
+      },
+      {
+        "icon": "trendDown",
+        "title": "Rankings you never earn",
+        "text": "If Google hasn't crawled it, it can't rank it. Your best content stays buried on nobody's page one."
+      },
+      {
+        "icon": "linkBroken",
+        "title": "Content budget up in smoke",
+        "text": "You paid writers and link builders. Unindexed URLs make every dollar of that spend worthless."
+      },
+      {
+        "icon": "refresh",
+        "title": "Manual submission won't scale",
+        "text": "Pasting URLs into Search Console one by one breaks the second you have 500 backlinks to push."
+      }
+    ]
+  },
+  "howItWorks": {
+    "label": "HOW IT WORKS",
+    "title": "Submitted. Crawled. Indexed. Tracked.",
+    "description": "Four stages. One dashboard. Every URL accounted for from paste to page one.",
+    "steps": [
+      {
+        "step": "01",
+        "icon": "send",
+        "title": "You submit",
+        "text": "Drop in a list of pages or backlinks — up to 1,500 at once."
+      },
+      {
+        "step": "02",
+        "icon": "target",
+        "title": "We get it crawled",
+        "text": "Priority signals push Googlebot to your URLs immediately."
+      },
+      {
+        "step": "03",
+        "icon": "database",
+        "title": "Google indexes",
+        "text": "Pages enter the index in minutes, not weeks of waiting."
+      },
+      {
+        "step": "04",
+        "icon": "chart",
+        "title": "You track it",
+        "text": "Every status flips to indexed live on your dashboard."
+      }
+    ]
+  },
+  "liveDemo": {
+    "badge": "SEE IT LIVE",
+    "title": "Your whole indexing pipeline, in one dashboard",
+    "description": "Create campaigns, import sitemaps, and watch every URL flip to Google-verified indexed — without leaving the panel.",
+    "dashboard": {
+      "url": "app.instantindexer.io/dashboard",
+      "brand": "Instant Indexer",
+      "nav": [
+        { "label": "Campaigns", "icon": "layers", "active": true, "badge": "5" },
+        { "label": "Sitemap import", "icon": "map", "active": false },
+        { "label": "Billing", "icon": "creditCard", "active": false },
+        { "label": "Settings", "icon": "settings", "active": false }
+      ],
+      "header": {
+        "title": "Campaign",
+        "subtitle": "Manual index checks and live status",
+        "credits": "1,240 credits",
+        "cta": "+ New campaign"
+      },
+      "breadcrumb": "All campaigns",
+      "context": {
+        "title": "Sitemap import — acme.store",
+        "status": "Normal",
+        "action": "Re-check all URLs"
+      },
+      "stats": [
+        { "label": "Total URLs", "value": "4" },
+        { "label": "Indexed", "value": "0" },
+        { "label": "Not indexed", "value": "0" },
+        { "label": "Checking", "value": "4" }
+      ],
+      "table": {
+        "columns": ["SUBMITTED URL", "INDEX STATUS", "LAST CHECKED", "MANUAL CHECK"],
+        "rows": [
+          {
+            "url": "https://acme.store/collections/summer",
+            "status": "Not checked",
+            "lastChecked": "—",
+            "action": "Check"
+          },
+          {
+            "url": "https://acme.store/products/teal-hoodie",
+            "status": "Not checked",
+            "lastChecked": "—",
+            "action": "Check"
+          },
+          {
+            "url": "https://acme.store/blog/indexing-guide",
+            "status": "Not checked",
+            "lastChecked": "—",
+            "action": "Check"
+          },
+          {
+            "url": "https://acme.store/pages/about",
+            "status": "Not checked",
+            "lastChecked": "—",
+            "action": "Check"
+          }
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "label": "PRICING",
+    "title": "Pay per link. No subscription. No expiry.",
+    "description": "Buy links once and use them whenever. Need it now? Jump the queue with VIP Instant Index.",
+    "normal": {
+      "title": "Normal Indexing",
+      "subtitle": "Reliable indexing within 24–48 hrs",
+      "cta": "Choose a plan",
+      "tiers": [
+        { "name": "Trial", "links": 100, "price": 4.86, "perLink": 0.049 },
+        { "name": "Standard", "links": 500, "price": 16.16, "perLink": 0.032 },
+        { "name": "Volume", "links": 1500, "price": 43.09, "perLink": 0.029 }
+      ]
+    },
+    "vip": {
+      "badge": "INSTANT",
+      "title": "VIP Instant Index",
+      "subtitle": "Skip the queue — priority crawl",
+      "price": 0.15,
+      "priceLabel": "per link, flat",
+      "features": [
+        "95% indexed in 5–20 minutes",
+        "Priority crawl signals, no throttling"
+      ],
+      "bundles": [50, 200, 500],
+      "cta": "Get VIP instant index"
+    }
+  },
+  "comparison": {
+    "label": "THE COMPARISON",
+    "title": "Faster, fairer, no lock-in",
+    "columns": ["Instant Indexer", "Prime Indexer", "Omega Indexer"],
+    "youLabel": "YOU",
+    "rows": [
+      {
+        "feature": "Speed",
+        "icon": "gauge",
+        "values": [
+          { "text": "5–20 min (VIP)", "positive": true },
+          { "text": "24–72 hours", "positive": false },
+          { "text": "3–7 days", "positive": false }
+        ]
+      },
+      {
+        "feature": "Pricing model",
+        "icon": "tag",
+        "values": [
+          { "text": "Pay per link, no sub", "positive": true },
+          { "text": "Forced monthly plan", "positive": false },
+          { "text": "Credits expire in 30d", "positive": false }
+        ]
+      },
+      {
+        "feature": "Index verification",
+        "icon": "search",
+        "values": [
+          { "text": "Real Google search check", "positive": true },
+          { "text": "Self-reported status", "positive": false },
+          { "text": "No verification", "positive": false }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions, answered straight",
+    "items": [
+      {
+        "question": "How fast will my URLs actually get indexed?",
+        "answer": "VIP Instant Index gets roughly 95% of links indexed in 5–20 minutes. Normal indexing typically completes within 24–48 hours. Timing depends on the destination — a fresh money site behaves differently from an aged backlink."
+      },
+      {
+        "question": "How do you verify a URL is actually indexed?",
+        "answer": "We run real Google search checks against each submitted URL and update the status live on your dashboard — not self-reported guesses."
+      },
+      {
+        "question": "Is this safe and within Google's guidelines?",
+        "answer": "Yes. We send crawl priority signals through legitimate channels. There is no cloaking, no spam, and no gray-hat tricks — just faster discovery of URLs you already own or have earned."
+      },
+      {
+        "question": "What kind of URLs can I submit?",
+        "answer": "Pages, blog posts, product URLs, backlinks, landing pages, and sitemap imports — up to 1,500 URLs per batch."
+      },
+      {
+        "question": "Do my credits expire?",
+        "answer": "No. Credits never expire. Buy once, use whenever you need indexing — no subscriptions and no lock-in."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Get indexed before your competitors finish their coffee",
+    "description": "Start with 100 free trial links. Scale to VIP instant indexing the moment you need speed.",
+    "cta": { "label": "Start indexing now", "href": "/dashboard" },
+    "trustBadges": [
+      { "icon": "shield", "text": "Secure checkout" },
+      { "icon": "bolt", "text": "Instant activation" },
+      { "icon": "headphones", "text": "Real human support" }
+    ]
+  }
+}

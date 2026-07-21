@@ -1,0 +1,182 @@
+{
+  "brand": "Instant Indexer",
+  "user": {
+    "name": "Wasi Shah",
+    "email": "wasis7817@gmail.com",
+    "initials": "WS",
+    "role": "Member",
+    "credits": 40,
+    "normalCredits": 40,
+    "vipCredits": 0
+  },
+  "nav": [
+    { "label": "Campaigns", "href": "/dashboard", "icon": "grid" },
+    { "label": "Sitemap import", "href": "/dashboard/sitemap", "icon": "map" },
+    { "label": "Billing", "href": "/dashboard/billing", "icon": "creditCard" },
+    { "label": "Settings", "href": "/dashboard/settings", "icon": "settings" }
+  ],
+  "headerCta": {
+    "label": "New campaign"
+  },
+  "newCampaignModal": {
+    "title": "New campaign",
+    "nameLabel": "Campaign name",
+    "namePlaceholder": "e.g. Spring backlinks batch",
+    "speedLabel": "Indexing speed",
+    "speeds": [
+      {
+        "id": "normal",
+        "title": "Normal",
+        "description": "24–48 hrs · 2 credits / URL",
+        "locked": false
+      },
+      {
+        "id": "vip",
+        "title": "VIP instant · Locked",
+        "description": "Purchase VIP to unlock",
+        "locked": true
+      }
+    ],
+    "urlsLabel": "URLs",
+    "urlsHint": "one per line",
+    "urlsPlaceholder": "https://yourdomain.com/page-1\nhttps://yourdomain.com/page-2",
+    "cancelLabel": "Cancel",
+    "submitLabel": "Create campaign"
+  },
+  "campaigns": {
+    "title": "Campaigns",
+    "subtitle": "Track every URL from submitted to indexed",
+    "stats": [
+      { "label": "Total indexed", "value": "0", "badge": "live", "badgeTone": "brand" },
+      { "label": "Index rate", "value": "0%", "badge": "0 tracked", "badgeTone": "brand" },
+      { "label": "Avg. index time", "value": "—", "badge": "—", "badgeTone": "muted" },
+      { "label": "Indexed 24h", "value": "0", "badge": "live", "badgeTone": "brand" }
+    ],
+    "throughput": {
+      "title": "Indexing throughput",
+      "liveLabel": "LIVE",
+      "value": "0 URLs / hr",
+      "points": [0, 0, 0, 0, 0, 0, 0, 0],
+      "labels": ["-24h", "-18h", "-12h", "-6h", "now"]
+    },
+    "activity": {
+      "title": "Live activity",
+      "streamLabel": "streaming",
+      "empty": "No indexing checks yet — submit a campaign to see live status here."
+    },
+    "list": {
+      "title": "Your campaigns",
+      "total": 0,
+      "emptyLabel": "Create your first campaign"
+    }
+  },
+  "sitemap": {
+    "title": "Sitemap import",
+    "subtitle": "Pull URLs from any sitemap and push them into a campaign",
+    "fetchCard": {
+      "title": "Import URLs from sitemap",
+      "description": "Enter a domain and we'll pull every URL from its sitemap.xml.",
+      "placeholder": "https://yourdomain.com",
+      "cta": "Fetch sitemap"
+    },
+    "pasteCard": {
+      "title": "Or paste URLs directly",
+      "description": "No sitemap needed — paste any list of URLs (one per line) to check their indexing status.",
+      "placeholder": "https://yourdomain.com/page-1\nhttps://yourdomain.com/page-2",
+      "cta": "Load URLs"
+    }
+  },
+  "billing": {
+    "title": "Billing",
+    "subtitle": "Your link credits and top-ups",
+    "credits": {
+      "normal": { "label": "Normal index credits", "value": 0, "hint": "links available" },
+      "vip": { "label": "VIP Instant credits", "value": 0, "hint": "links available" },
+      "topUpPrompt": "Running low?",
+      "topUpCta": "Top up credits"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "description": "Pay per link. No subscription, no expiry. Buy once, use whenever.",
+      "normal": {
+        "title": "Normal Indexing",
+        "subtitle": "Reliable indexing within 24–48 hrs",
+        "tiers": [
+          { "name": "Trial", "links": 100, "price": 4.86, "perLink": 0.049 },
+          { "name": "Standard", "links": 500, "price": 16.16, "perLink": 0.032 },
+          { "name": "Volume", "links": 1500, "price": 43.09, "perLink": 0.029 }
+        ]
+      },
+      "vip": {
+        "badge": "INSTANT",
+        "title": "VIP Instant Index",
+        "subtitle": "Skip the queue — 5–20 min",
+        "priceLabel": "$0.15 per link, flat",
+        "bundles": [50, 200, 500]
+      }
+    },
+    "topUp": {
+      "title": "Top up credits",
+      "description": "Pay via Easypaisa or crypto, then send your receipt on WhatsApp so we can credit your account.",
+      "easypaisa": {
+        "label": "Easypaisa",
+        "fields": [
+          { "label": "Account Number", "value": "03191660660" },
+          { "label": "Account Name", "value": "Hassnain Karim" }
+        ]
+      },
+      "crypto": {
+        "label": "Pay with crypto",
+        "asset": "USDT",
+        "network": "USDT Ethereum (ERC20)",
+        "address": "0x5ff474D0D334Dd812c4e06b05bb3C5348B024f7d",
+        "warning": "Only send USDT on the Ethereum (ERC20) network to this address. Other assets or networks will be lost forever."
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Notifications and account",
+    "notifications": [
+      {
+        "id": "indexingComplete",
+        "title": "Indexing complete",
+        "description": "Get notified when a campaign finishes indexing.",
+        "enabled": true
+      },
+      {
+        "id": "notIndexed",
+        "title": "Not-indexed alerts",
+        "description": "Alert me when URLs fail to index after re-check.",
+        "enabled": true
+      },
+      {
+        "id": "weeklySummary",
+        "title": "Weekly summary",
+        "description": "A weekly digest of indexed vs pending URLs.",
+        "enabled": false
+      }
+    ],
+    "account": {
+      "name": "Wasi Shah",
+      "email": "wasis7817@gmail.com",
+      "role": "Member",
+      "normalCredits": 0,
+      "vipCredits": 0
+    },
+    "password": {
+      "title": "Change password",
+      "currentLabel": "CURRENT PASSWORD",
+      "newLabel": "NEW PASSWORD",
+      "cta": "Update password"
+    },
+    "creditHistory": {
+      "title": "Credit history",
+      "empty": "No transactions yet."
+    }
+  },
+  "whatsapp": {
+    "label": "WhatsApp",
+    "href": "https://wa.me/10000000000"
+  }
+}

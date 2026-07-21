@@ -1,0 +1,11 @@
+export { Navbar } from "./Navbar";
+export { HeroSection } from "./HeroSection";
+export { AudienceBar } from "./AudienceBar";
+export { ProblemSection } from "./ProblemSection";
+export { HowItWorksSection } from "./HowItWorksSection";
+export { LiveDemoSection } from "./LiveDemoSection";
+export { PricingSection } from "./PricingSection";
+export { ComparisonSection } from "./ComparisonSection";
+export { FaqSection } from "./FaqSection";
+export { FinalCtaSection } from "./FinalCtaSection";
+export { WhatsAppFab } from "./WhatsAppFab";
