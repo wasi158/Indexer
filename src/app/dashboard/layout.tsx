@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { CampaignModalProvider } from "@/components/dashboard/NewCampaignModal";
+import { AuthGuard } from "@/components/auth/AuthGuard";
 
 export const metadata: Metadata = {
   title: "Dashboard — Instant Indexer",
@@ -12,5 +13,9 @@ export default function DashboardLayout({
 }: {
   children: ReactNode;
 }) {
-  return <CampaignModalProvider>{children}</CampaignModalProvider>;
+  return (
+    <AuthGuard>
+      <CampaignModalProvider>{children}</CampaignModalProvider>
+    </AuthGuard>
+  );
 }

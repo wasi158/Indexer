@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import data from "@/data/dashboard.json";
 import { cn } from "@/lib/cn";
 import {
@@ -17,6 +17,7 @@ import {
 } from "@/components/atoms/Icon";
 import { WhatsAppFab } from "@/components/organisms/WhatsAppFab";
 import { useCampaignModal } from "@/components/dashboard/NewCampaignModal";
+import { getSession, type AuthSession } from "@/lib/auth";
 
 function isActive(pathname: string, href: string) {
   if (href === "/dashboard") return pathname === "/dashboard";
@@ -32,6 +33,19 @@ function Sidebar({
 }) {
   const pathname = usePathname();
   const { brand, nav, user } = data;
+  const [session, setSessionState] = useState<AuthSession | null>(null);
+
+  useEffect(() => {
+    setSessionState(getSession());
+  }, []);
+
+  const displayName = session?.name || user.name;
+  const initials = displayName
+    .split(" ")
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
   return (
     <>
@@ -95,20 +109,21 @@ function Sidebar({
         <div className="relative border-t border-white/8 bg-sidebar-elevated/40 px-4 py-4">
           <div className="mb-3 flex items-center gap-3">
             <span className="flex h-10 w-10 items-center justify-center rounded-full btn-primary-gradient text-sm font-bold text-white shadow-brand">
-              {user.initials}
+              {initials}
             </span>
             <div className="min-w-0">
-              <p className="truncate text-sm font-semibold text-white">{user.name}</p>
+              <p className="truncate text-sm font-semibold text-white">{displayName}</p>
               <p className="text-xs text-white/45">{user.role}</p>
             </div>
           </div>
-          <button
-            type="button"
+          <Link
+            href="/logout"
+            onClick={onClose}
             className="inline-flex items-center gap-2 rounded-lg px-1 py-1 text-sm text-white/50 transition hover:text-brand-light"
           >
             <IconLogOut size={15} />
             Sign out
-          </button>
+          </Link>
         </div>
       </aside>
     </>
