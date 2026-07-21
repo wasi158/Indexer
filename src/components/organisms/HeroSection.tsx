@@ -49,24 +49,47 @@ function HeroMockup() {
         </div>
 
         <div className="grid grid-cols-4 gap-2 border-b border-white/8 px-4 py-4">
-          {mockup.steps.map((step, index) => (
-            <div key={step.id} className="relative flex flex-col items-center gap-2 text-center">
-              {index < mockup.steps.length - 1 && (
-                <span className="absolute left-[62%] top-4 hidden h-px w-[76%] bg-brand/50 sm:block" />
-              )}
-              <span
+          {mockup.steps.map((step, index) => {
+            const isActive = index < 2;
+            const delays = ["delay-300", "delay-400", "delay-500", "delay-600"];
+            return (
+              <div
+                key={step.id}
                 className={cn(
-                  "relative z-10 flex h-8 w-8 items-center justify-center rounded-lg",
-                  index < 2 ? "btn-primary-gradient text-white" : "bg-white/8 text-white/50",
+                  "group/step relative flex flex-col items-center gap-2 text-center animate-step-pop",
+                  delays[index],
                 )}
               >
-                <Icon name={step.icon as IconName} size={14} />
-              </span>
-              <span className="text-[9px] font-semibold tracking-wider text-white/45">
-                {step.label}
-              </span>
-            </div>
-          ))}
+                {index < mockup.steps.length - 1 && (
+                  <span className="hero-step-connector absolute left-[62%] top-4 hidden h-0.5 w-[76%] rounded-full sm:block" />
+                )}
+                <span
+                  className={cn(
+                    "hero-step-icon relative z-10 flex h-9 w-9 cursor-pointer items-center justify-center rounded-xl",
+                    isActive
+                      ? "hero-step-icon-active bg-brand text-white shadow-[0_8px_20px_-8px_rgba(45,212,191,0.8)] group-hover/step:scale-125 group-hover/step:bg-brand-light group-hover/step:shadow-[0_12px_28px_-8px_rgba(45,212,191,0.95)]"
+                      : "bg-white/8 text-white/50 group-hover/step:scale-125 group-hover/step:bg-brand/30 group-hover/step:text-brand-light group-hover/step:shadow-[0_10px_24px_-10px_rgba(45,212,191,0.55)]",
+                  )}
+                >
+                  <Icon
+                    name={step.icon as IconName}
+                    size={15}
+                    className="transition-transform duration-300 group-hover/step:rotate-6 group-hover/step:scale-110"
+                  />
+                </span>
+                <span
+                  className={cn(
+                    "text-[9px] font-semibold tracking-wider transition-colors duration-300",
+                    isActive
+                      ? "text-brand-light group-hover/step:text-white"
+                      : "text-white/45 group-hover/step:text-brand-light",
+                  )}
+                >
+                  {step.label}
+                </span>
+              </div>
+            );
+          })}
         </div>
 
         <div className="space-y-3 px-4 py-4">

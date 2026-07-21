@@ -25,7 +25,7 @@ export function ProblemSection() {
               className="group card-lift rounded-2xl border border-border bg-white p-5 animate-fade-up"
               style={{ animationDelay: `${index * 80}ms` }}
             >
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand transition-transform duration-300 group-hover:scale-110 group-hover:btn-primary-gradient group-hover:text-white">
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white group-hover:shadow-brand">
                 <Icon name={card.icon as IconName} size={18} />
               </div>
               <h3 className="text-base font-bold text-ink">{card.title}</h3>

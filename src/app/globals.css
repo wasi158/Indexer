@@ -210,16 +210,77 @@ body {
   animation: gradient-shift 8s ease infinite;
 }
 
-.delay-100 {
-  animation-delay: 100ms;
+@keyframes step-pop {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-.delay-150 {
-  animation-delay: 150ms;
+@keyframes connector-flow {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 0.35;
+  }
 }
 
-.delay-200 {
-  animation-delay: 200ms;
+@keyframes icon-glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(45, 212, 191, 0);
+  }
+}
+
+.animate-step-pop {
+  animation: step-pop 0.55s ease-out both;
+}
+
+.hero-step-icon {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.hero-step-icon-active {
+  animation: icon-glow-pulse 2.4s ease-in-out infinite;
+}
+
+.hero-step-connector {
+  background: linear-gradient(90deg, #2dd4bf, #0284c7, #2dd4bf);
+  background-size: 200% 100%;
+  animation: connector-flow 2.8s ease-in-out infinite;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
 }
 
 ::selection {
